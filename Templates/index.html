@@ -1,0 +1,31 @@
+ <!DOCTYPE html>
+<html lang=en>
+    <head>
+        <meta charset="UTF-8">
+        <title>Analysis</title>
+
+       
+    </head>
+   
+    
+
+        
+        <h1 style="color:rgb(7, 4, 106)">Heart Failure Predictor</h1>
+        
+
+        <h3 form method="post" action="/predict">
+            <label style="color:rgb(2, 87, 8)">example</label><br>
+            <input type="text" name="example"><br><br></h3>
+
+
+
+            <input type="submit" value="Predict"><br><br>
+            {% if result %}
+                <h2 style="color:rgb(158, 4, 4)">{{result}}</h2>
+            {% endif %}
+
+        </form>
+        </div>
+        </section>
+    </body>
+</html>
